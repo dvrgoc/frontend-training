@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.floating-wrapper {
+    background: gold;
+    clear: both;
+    float: none;
+}
+
+.floating-wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.floating-wrapper ul {
+    float: right;
+}
+
+.relative-wrapper {
+    position: relative;
+    background: #ec1d2e;
+}
+
+.relative-wrapper ul {
+    position: absolute;
+    background: lime;
+    top: 50%;
+    left: 50%;
+}
+
+.fixed-wrapper {
+    height: 400px;
+    background: silver;
+}
+
+.fixed-wrapper ul {
+    background: blue;
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 60px;
+    padding: 30px;
+}
+
+.sticky-wrapper {
+    background: purple;
+    position: sticky;
+    top: 0;
+}
+
+.some-content {
+    height: 1600px;
+}
+
+.box__sizing__example {
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border: 5px solid red;
+    margin: 10px;
+}
+
+.box__sizing__example--content-box {
+    box-sizing: content-box;
+}
+
+.box__sizing__example--border-box {
+    box-sizing: border-box;
+}
+
+/* BEM */
+.button {
+/*    font size
+line height
+font weight
+letter spacing
+padding
+border-width
+border-style
+
+*/
+}
+
+.button--primary {
+    background: white;
+    border-color: green
+}
+
+.button--secondary {
+    background: white;
+    border-color: blue;
+}
+
+
+/*media queries */
+body {
+    /*background: red*/
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        /*background: blue;*/
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        /*background: pink*/
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        /*background: aquamarine;*/
+    }
+}
+
+/* retina devices - 2x pixel density */
+@media (min-resolution: 2dppx) {
+    body {
+        background: green
+    }
+}
+
+/* retina devices - 3x pixel density */
+@media (min-resolution: 3dppx) {
+    body {
+        background: black
+    }
+}
+
+.relative-flow-wrapper h2 {
+    position: relative;
+    background: chocolate;
+    left: 30px;
+    top: 60px;
+    z-index: 1;
+}
+
+.relative-flow-wrapper h3 {
+    position: absolute;
+    z-index: 2;
+    background: white;
+    left: 100px;
+    top: 150px;
+}
+
+
