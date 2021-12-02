@@ -3,13 +3,85 @@
   margin: 0;
 }
 
+section {
+    padding-bottom: 20px;
+    border-bottom: 2px solid red;
+    margin-bottom: 60px;
+}
+
 h1 {
     margin-bottom: 20px;
 }
 
-hr {
-    margin: 20px 0;
-    border-color: red;
+/* CSS SELECTORS */
+.attribute-selectors li {
+    margin-bottom: 12px;
+}
+
+.exact-class-name {
+    color: blue;
+}
+
+p[class="exact-class-name-by-attr"] {
+    color: darkgreen;
+}
+
+p[class~="tilde"] {
+    color: crimson;
+}
+
+p[class|="pipe"] {
+    color: saddlebrown;
+}
+
+p[class^="begins"] {
+    color: darkmagenta;
+}
+
+p[class$="end"] {
+    color: indianred;
+}
+
+p[class*="anywhere"] {
+    color: seagreen;
+}
+
+/* PSEUDO SELECTORS */
+.pseudo-selectors p:empty {
+    height: 50px;
+    background: tomato;
+}
+
+.pseudo-nth-child li:nth-child(2) {
+    background: silver;
+}
+
+.pseudo-nth-child-formula li:nth-child(n + 3) {
+    background: silver;
+}
+
+.pseudo-nth-last-child-formula li:nth-last-child(n + 3) {
+    background: silver;
+}
+
+.pseudo-first-child li:first-child {
+    background: tomato;
+}
+
+.pseudo-last-child li:last-child {
+    background: tomato;
+}
+
+.pseudo-only-child li:only-child {
+    background: lightgreen;
+}
+
+.pseudo-first-of-type p:first-of-type {
+    background: olive;
+}
+
+.pseudo-last-of-type p:last-of-type {
+    background: olive;
 }
 
 .floating-wrapper {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grabsbee</title>
+    <title>Frontend praksa</title>
     <link rel="stylesheet" href="./danijel/style.css" />
   </head>
   <body>
@@ -14,6 +14,121 @@
     <main>
         <h1>this is demo html file with various examples</h1>
 
+        <section class="attribute-selectors">
+            <h2>CSS attribute selectors</h2>
+            <ul>
+                <li>
+                    <p class="exact-class-name">selector that targets exact value of an attribute</p>
+                </li>
+                <li>
+                    <p class="exact-class-name-by-attr">selector that targets element by specifying both attribute and exact value</p>
+                </li>
+                <li>
+                    <p class="exact-class-name-by-attr tilde">selector that targets element by specifying both attribute and value using tilde (~)</p>
+                </li>
+                <li>
+                    <p class="pipe-">selector that targets element by specifying both attribute and value using pipe (|)</p>
+                    <p class="pipe">selector that targets element by specifying both attribute and value using pipe (|)</p>
+                    <p class="something pipe">selector that targets element by specifying both attribute and value using pipe (|)</p>
+                    <p class="something pipe-">selector that targets element by specifying both attribute and value using pipe (|)</p>
+                </li>
+                <li>
+                    <p class="begins-with">selector that targets element by specifying both attribute and value using caret (^)</p>
+                </li>
+                <li>
+                    <p class="the-end">selector that targets element by specifying both attribute and value using dollar ($)</p>
+                </li>
+                <li>
+                    <p class="class-1 class-2 anywhere class-3">selector that targets element by specifying both attribute and value using asterisk (*)</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="pseudo-selectors">
+            <h2>CSS pseudo selectors</h2>
+            <h3>:empty</h3>
+            <p class="empty"></p>
+
+            <h3>:nth-child - number</h3>
+            <ul class="pseudo-nth-child">
+                <li>1. item</li>
+                <li>2. item</li>
+                <li>3. item</li>
+            </ul>
+
+            <h3>:nth-child - formula</h3>
+            <ul class="pseudo-nth-child-formula">
+                <li>1. item</li>
+                <li>2. item</li>
+                <li>3. item</li>
+                <li>4. item</li>
+                <li>5. item</li>
+                <li>6. item</li>
+                <li>7. item</li>
+                <li>8. item</li>
+                <li>9. item</li>
+                <li>10. item</li>
+            </ul>
+
+            <h3>:nth-last-child - formula</h3>
+            <ul class="pseudo-nth-last-child-formula">
+                <li>1. item</li>
+                <li>2. item</li>
+                <li>3. item</li>
+                <li>4. item</li>
+                <li>5. item</li>
+                <li>6. item</li>
+                <li>7. item</li>
+                <li>8. item</li>
+                <li>9. item</li>
+                <li>10. item</li>
+            </ul>
+
+            <h3>:first-child</h3>
+            <ul class="pseudo-first-child">
+                <li>1. item</li>
+                <li>2. item</li>
+                <li>3. item</li>
+            </ul>
+
+            <h3>:last-child</h3>
+            <ul class="pseudo-last-child">
+                <li>1. item</li>
+                <li>2. item</li>
+                <li>3. item</li>
+            </ul>
+
+            <h3>:only-child - exactly one child element</h3>
+            <ul class="pseudo-only-child">
+                <li>1. item</li>
+            </ul>
+
+            <h3>:only-child - more than one child element</h3>
+            <ul class="pseudo-only-child">
+                <li>1. item</li>
+                <li>2. item</li>
+                <li>3. item</li>
+            </ul>
+
+            <h3>:first-of-type</h3>
+            <div class="pseudo-first-of-type">
+                <div>this is div</div>
+                <div>this is div</div>
+                <p>this is paragraph</p>
+                <div>this is div</div>
+            </div>
+
+            <h3>:last-of-type</h3>
+            <div class="pseudo-last-of-type">
+                <div>this is div</div>
+                <div>this is div</div>
+                <p>this is paragraph</p>
+                <p>this is paragraph</p>
+                <p>this is last paragraph</p>
+                <div>this is div</div>
+            </div>
+        </section>
+
         <section class="floating-wrapper">
             <h2>floating without clearfix</h2>
             <ul>
@@ -22,8 +137,6 @@
                 <li>item 3</li>
             </ul>
         </section>
-
-        <hr>
 
         <section class="floating-wrapper clearfix">
             <h2>floating with clearfix</h2>
@@ -35,8 +148,6 @@
             </ul>
         </section>
 
-        <hr>
-
         <section class="relative-wrapper">
             <h2>relative positioning of an element</h2>
             <h3>this element is relatively positioned, but its original position in layout is preserved
@@ -44,21 +155,15 @@
             </h3>
         </section>
 
-        <hr>
-
         <section class="absolute-wrapper">
             <h2>absolute positioning of an element</h2>
             <h3>this element has "position: absolute" (with respect to its first parent(s) that is positioned relatively), its original position in layout is NOT preserved</h3>
         </section>
 
-        <hr>
-
         <section class="fixed-wrapper">
             <h2>fixed positioning of an element</h2>
             <h3>this element has "position: fixed", its original position in layout is NOT preserved</h3>
         </section>
-
-        <hr>
 
         <section class="sticky-wrapper">
             <h2>sticky positioning of an element (must be direct child element of a scrollable element)</h2>
@@ -66,16 +171,15 @@
 
         <section class="some-content"></section>
 
-        <hr>
-
-        <div class="box__sizing__example box__sizing__example--content-box">
-            box sizing and calculation, when content box is applied
-        </div>
-        <div class="box__sizing__example box__sizing__example--border-box">
-            box sizing and calculation, when border box is applied
-        </div>
-
-        <hr>
+        <section>
+            <h2>box sizing (and BEM)</h2>
+            <div class="box__sizing__example box__sizing__example--content-box">
+                box sizing and calculation, when content box is applied
+            </div>
+            <div class="box__sizing__example box__sizing__example--border-box">
+                box sizing and calculation, when border box is applied
+            </div>
+        </section>
 
         <section class="media-queries">
             <h2>this element will change background color, with respect to viewport width</h2>
