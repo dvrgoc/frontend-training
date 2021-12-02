@@ -15,7 +15,7 @@
         <h1>this is demo html file with various examples</h1>
 
         <section class="floating-wrapper">
-            <h2>floating</h2>
+            <h2>floating without clearfix</h2>
             <ul>
                 <li>item 1</li>
                 <li>item 2</li>
@@ -23,36 +23,50 @@
             </ul>
         </section>
 
-        <section class="relative-flow-wrapper">
-            <h2>relative flow wrapper</h2>
-            <h3>absolute element with z-index</h3>
+        <hr>
+
+        <section class="floating-wrapper clearfix">
+            <h2>floating with clearfix</h2>
+
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
         </section>
+
+        <hr>
 
         <section class="relative-wrapper">
-            <h2>relative element</h2>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
+            <h2>relative positioning of an element</h2>
+            <h3>this element is relatively positioned, but its original position in layout is preserved
+                <br> and may cause overflow issue
+            </h3>
         </section>
+
+        <hr>
+
+        <section class="absolute-wrapper">
+            <h2>absolute positioning of an element</h2>
+            <h3>this element has "position: absolute" (with respect to its first parent(s) that is positioned relatively), its original position in layout is NOT preserved</h3>
+        </section>
+
+        <hr>
 
         <section class="fixed-wrapper">
-            <h2>fixed element</h2>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
+            <h2>fixed positioning of an element</h2>
+            <h3>this element has "position: fixed", its original position in layout is NOT preserved</h3>
         </section>
+
+        <hr>
 
         <section class="sticky-wrapper">
-            <h2>sticky element</h2>
+            <h2>sticky positioning of an element (must be direct child element of a scrollable element)</h2>
         </section>
 
-        <section class="some-content">
+        <section class="some-content"></section>
 
-        </section>
+        <hr>
 
         <div class="box__sizing__example box__sizing__example--content-box">
             box sizing and calculation, when content box is applied
@@ -60,6 +74,14 @@
         <div class="box__sizing__example box__sizing__example--border-box">
             box sizing and calculation, when border box is applied
         </div>
+
+        <hr>
+
+        <section class="media-queries">
+            <h2>this element will change background color, with respect to viewport width</h2>
+
+            <h3>this element will change background color, with respect to device pixel ratio (DPR)</h3>
+        </section>
 
     </main>
 

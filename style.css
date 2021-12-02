@@ -3,13 +3,21 @@
   margin: 0;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border-color: red;
+}
+
 .floating-wrapper {
-    background: gold;
     clear: both;
     float: none;
 }
 
-.floating-wrapper::after {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
@@ -17,11 +25,25 @@
 
 .floating-wrapper ul {
     float: right;
+    background: gold;
 }
 
+.floating-wrapper.clearfix ul {
+    background: violet;
+}
+
+
+/* POSITIONING */
 .relative-wrapper {
     position: relative;
-    background: #ec1d2e;
+}
+
+.relative-wrapper h3 {
+    position: relative;
+    background: chocolate;
+    left: 50px;
+    top: 10px;
+    z-index: 1;
 }
 
 .relative-wrapper ul {
@@ -31,28 +53,34 @@
     left: 50%;
 }
 
-.fixed-wrapper {
-    height: 400px;
-    background: silver;
+.absolute-wrapper {
+    position: relative;
 }
 
-.fixed-wrapper ul {
+.absolute-wrapper h3 {
+    position: absolute;
+    z-index: 2;
+    background: sandybrown;
+    left: 100px;
+    top: 20px;
+}
+
+.fixed-wrapper h3 {
     background: blue;
     color: white;
     position: fixed;
-    top: 0px;
+    top: 0;
     right: 60px;
-    padding: 30px;
 }
 
 .sticky-wrapper {
-    background: purple;
+    background: cornflowerblue;
     position: sticky;
     top: 0;
 }
 
 .some-content {
-    height: 1600px;
+    height: 1000px;
 }
 
 .box__sizing__example {
@@ -95,57 +123,41 @@ border-style
 }
 
 
-/*media queries */
-body {
-    /*background: red*/
+/* MEDIA QUERIES */
+.media-queries h2 {
+    background: red
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        /*background: blue;*/
+    .media-queries h2 {
+        background: blue;
     }
 }
 
 @media screen and (max-width: 1023px) {
-    body {
-        /*background: pink*/
+    .media-queries h2 {
+        background: pink
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        /*background: aquamarine;*/
+    .media-queries h2 {
+        background: aquamarine;
     }
 }
 
 /* retina devices - 2x pixel density */
 @media (min-resolution: 2dppx) {
-    body {
+    .media-queries h3 {
         background: green
     }
 }
 
 /* retina devices - 3x pixel density */
 @media (min-resolution: 3dppx) {
-    body {
-        background: black
+    .media-queries h3 {
+        background: darkcyan;
     }
-}
-
-.relative-flow-wrapper h2 {
-    position: relative;
-    background: chocolate;
-    left: 30px;
-    top: 60px;
-    z-index: 1;
-}
-
-.relative-flow-wrapper h3 {
-    position: absolute;
-    z-index: 2;
-    background: white;
-    left: 100px;
-    top: 150px;
 }
 
 
