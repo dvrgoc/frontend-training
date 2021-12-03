@@ -154,7 +154,7 @@
                 <label for="radio-2">radio 2</label>
                 <br>
                 <input type="checkbox" name="test-checkbox" id="checkbox-1" />
-                <label for="checkbox-1">checkbox 2</label>
+                <label for="checkbox-1">checkbox 1</label>
                 <br>
                 <input type="checkbox" name="test-checkbox" id="checkbox-2" />
                 <label for="checkbox-2">checkbox 2</label>
@@ -219,6 +219,65 @@
             <h3>this element will change background color, with respect to device pixel ratio (DPR)</h3>
         </section>
 
+        <section>
+            <h2>flex container with static children</h2>
+            <div class="flexbox row">
+                <div class="flexbox-row-el flexbox-row-el--static">1</div>
+                <div class="flexbox-row-el flexbox-row-el--static">2</div>
+                <div class="flexbox-row-el flexbox-row-el--static">3</div>
+                <div class="flexbox-row-el flexbox-row-el--static">4</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>flex container with responsive children</h2>
+            <div class="flexbox row">
+                <div class="flexbox-row-el flexbox-row-el--responsive">1</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive">2</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive">3</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive">4</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>changed order of flex children</h2>
+            <div class="flexbox row">
+                <div class="flexbox-row-el flexbox-row-el--responsive flex-row-el-order--default">1</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive flex-row-el-order--default">2</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive flex-row-el-order--changed">3</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive flex-row-el-order--default">4</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>wrap children elements in 2nd row</h2>
+            <div class="flexbox row flex--wrap">
+                <div class="flexbox-row-el flexbox-row-el--1-2">1</div>
+                <div class="flexbox-row-el flexbox-row-el--1-2">2</div>
+                <div class="flexbox-row-el flexbox-row-el--1-2">3</div>
+                <div class="flexbox-row-el flexbox-row-el--1-2">4</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>vertical alignment of flex children</h2>
+            <div class="flexbox row flexbox-vertical-alignment">
+                <div class="flexbox-row-el flexbox-row-el--responsive flexbox-height-1">1</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive flexbox-height-2">2</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive flexbox-height-3">3</div>
+                <div class="flexbox-row-el flexbox-row-el--responsive flexbox-height-4">4</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>horizontal alignment of flex-children</h2>
+            <div class="flexbox flexbox-horizontal-alignment">
+                <div class="flexbox-row-el">1</div>
+                <div class="flexbox-row-el">2</div>
+                <div class="flexbox-row-el">3</div>
+                <div class="flexbox-row-el">4</div>
+            </div>
+        </section>
     </main>
 
 

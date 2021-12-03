@@ -299,3 +299,80 @@ border-style
 }
 
 
+.flexbox {
+    display: flex;
+}
+
+.flexbox-row-el {
+    padding: 20px;
+    height: 60px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.flexbox-row-el--static {
+    flex: 0 0 auto;
+}
+
+.flexbox-row-el--responsive {
+    flex: 1 1 25%;
+}
+
+.flex-row-el-order--default {
+    order: 1;
+}
+
+.flex-row-el-order--changed {
+    order: 0;
+    background: silver;
+    color: white;
+}
+
+.flex--wrap {
+    flex-wrap: wrap
+}
+
+.flexbox-row-el--1-2 {
+    flex: 1 1 50%;
+}
+
+.flexbox-height-1 {
+    height: 70px;
+}
+
+.flexbox-height-2 {
+    height: 90px;
+}
+
+.flexbox-height-3 {
+    height: 50px;
+}
+
+.flexbox-height-4 {
+    height: 130px;
+}
+
+.flexbox-vertical-alignment {
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-end;
+}
+
+/*.flexbox-vertical-alignment .flexbox-row-el:nth-child(2) {*/
+/*    align-self: flex-start;*/
+/*}*/
+
+.flexbox-horizontal-alignment {
+    justify-content: flex-start;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+/*.flexbox-horizontal-alignment .flexbox-row-el:nth-child(1) {*/
+/*    margin-right: auto;*/
+/*}*/
+
+
+
