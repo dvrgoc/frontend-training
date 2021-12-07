@@ -374,5 +374,117 @@ border-style
 /*    margin-right: auto;*/
 /*}*/
 
+.transition-square {
+    width: 150px;
+    height: 150px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: tomato;
+    box-sizing: border-box;
+    background-color: lime;
+}
+
+.transition--single {
+    background-color: silver;
+    transition: background-color 1s linear;
+}
+
+.transition--single:hover {
+    background-color: gold;
+}
+
+.transition--multiple {
+    transition: background-color 1s linear,
+        border-color 3s ease-in-out,
+        width 2s ease-in-out;
+}
+
+.transition--multiple:hover {
+    background-color: gold;
+    width: 250px;
+    border-color: blue;
+}
+
+.transition--all {
+    transition: all 1s linear;
+}
+
+.transition--all:hover {
+    background-color: gold;
+    width: 250px;
+    border-color: blue;
+}
+
+.transition--scale {
+    transform: scale(1);
+    transition: all 1s linear;
+}
+
+.transition--scale:hover {
+    transform: scale(1.2);
+}
+
+.transition--translateX {
+    transform: translateX(0);
+    transition: all 1s linear;
+}
+
+.transition--translateX:hover {
+    transform: translateX(100%);
+}
+
+.transition--translateY {
+    transform: translateY(0);
+    transition: all 1s linear;
+}
+
+.transition--translateY:hover {
+    transform: translateY(-100%);
+}
+
+@keyframes animationSimple {
+    from {
+        background-color: lime;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+.animation--1 {
+    animation-name: animationSimple;
+    animation-duration: 4s;
+}
+
+@keyframes animationComplex {
+    0% {
+        background-color: lime;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+.animation--2 {
+    animation-name: animationComplex;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
 
 
