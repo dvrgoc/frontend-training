@@ -8,7 +8,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="./danijel/style.css" />
+      <link rel="stylesheet" href="./danijel/swiper.min.css" />
   </head>
   <body>
     <header id="header">
@@ -323,10 +324,36 @@
                 <div class="animation--2 transition-square"></div>
             </div>
         </section>
+
+        <section>
+            <h2>slider</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
     </main>
 
 
     <footer id="footer">
     </footer>
+
+    <script src="./danijel/swiper-bundle.min.js"></script>
+    <script src="./danijel/homepage-slider.js"></script>
   </body>
 </html>
