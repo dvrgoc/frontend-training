@@ -383,6 +383,22 @@ border-style
 /*    margin-right: auto;*/
 /*}*/
 
+.grid__wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.grid__element {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
 .transition-square {
     width: 150px;
     height: 150px;
@@ -496,4 +512,7 @@ border-style
     animation-delay: 3s;
 }
 
-
+div.swiper-slide {
+    border: 1px solid red;
+    height: 300px;
+}
